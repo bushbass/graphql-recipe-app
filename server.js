@@ -25,7 +25,7 @@ const schema = makeExecutableSchema({
 
 // Connects to database
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGO_URI_LOCAL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true

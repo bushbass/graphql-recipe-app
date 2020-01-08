@@ -1,1 +1,2 @@
 MONGO_URI=mongodb://username:password@ds359118.mlab.com:59118/graphql-recipe-app
+MONGO_URI_LOCAL=mongodb://localhost:27017/graphql-recipe-app

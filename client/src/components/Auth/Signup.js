@@ -25,10 +25,12 @@ class Signup extends Component {
 
   handleSubmit = (event, signupUser) => {
     event.preventDefault();
-    signupUser().then(data => {
-      console.log(data);
-      this.clearState();
-    });
+    signupUser()
+      .then(data => {
+        console.log({ data });
+        this.clearState();
+      })
+      .catch(error => console.log(error));
   };
 
   validateForm = () => {
@@ -87,7 +89,7 @@ class Signup extends Component {
                 >
                   Submit
                 </button>
-                {error && <Error error={error}></Error>}
+                {error && <Error error={error} />}
               </form>
             );
           }}
